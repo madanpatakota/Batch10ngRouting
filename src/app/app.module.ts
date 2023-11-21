@@ -7,6 +7,7 @@ import { EmployeeComponent } from './employee/employee.component';
 import { EmployeeDetailsComponent } from './employee-details/employee-details.component';
 
 import { Routes , RouterModule } from '@angular/router';
+import { EmployeeService } from './employee.service';
 
 
 
@@ -31,12 +32,16 @@ import { Routes , RouterModule } from '@angular/router';
      1. Routes is nothing but array of objects 
      
 
+     locahosthost:4200/employeedetails/1
+                                      ---
+
 */
 
 const routes : Routes = [ 
                            { path : "main" , component : MainComponent } , 
                            { path : "employee" , component : EmployeeComponent},
-                           { path : "employeedetails" , component : EmployeeDetailsComponent}
+                           { path : "employeedetails" , component : EmployeeDetailsComponent},
+                           { path : "employeedetails/:ID" , component : EmployeeDetailsComponent}
                         ];
 
 
@@ -52,7 +57,7 @@ const routes : Routes = [
     BrowserModule,
     RouterModule.forRoot(routes)
   ],
-  providers: [],
+  providers: [ EmployeeService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
