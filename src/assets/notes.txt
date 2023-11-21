@@ -1,0 +1,132 @@
+
+
+
+  github.com   ----> WebSite
+  
+  
+  Website(Drive)
+  github.com/madanpatakota   -- path
+  
+  
+  https://github.com/madanpatakota#repositories
+  
+  
+  abc.com/aabbcc#data
+  
+ C:\inetpub\temp\appPools\DefaultAppPool
+ 
+ 
+ https://github.com/madanpatakota/repositories        subfolder --> repositories
+ 
+ 
+ https://github.com/madanpatakota/Batch10ngServices/projects?query=isAopen
+ 
+  //fragment
+  https://github.com/madanpatakota/Batch10ngServices/projects#isAopen
+  
+  
+ //querystring
+ https://github.com/madanpatakota?tab=repositories    trying to pass the tab = repositories info into the madanpata
+  
+  
+  
+  how to configure the path  
+  
+  1. Keep in mind 
+     based on the path you are going to display the page.
+	 
+	 
+  
+  
+  html code
+  <a href="page1.html"> page1 </a>   ---> you will be land into the page1
+  
+  
+   localhost:4200/page1
+   (page1 output)
+   
+   
+   how to prepare the routerlink into the angular
+   
+   
+   
+                              Main aboutus carrier
+   
+   
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  C drive 
+  
+  
+  
+  C:\inetpub     -- path
+  
+  C:\inetpub\temp\    -- path
+  
+  
+  C:\inetpub\temp\appPools  --- path
+  
+  C:\inetpub\temp\appPools\DefaultAppPool     --- Path
+  
+  
+  
+  DefaultAppPool.xml
+  
+  
+  
+  
+//https://github.com/madanpatakota                            - path
+//https://github.com/madanpatakota/       repositories        - params
+//https://github.com/madanpatakota       ?tab=repositories    - querystring
+//https://github.com/madanpatakota       #repositories        - fragment
+
+
+https://localhost:4200   
+
+https://localhost:4200/main           -->  path : https://localhost:4200/main ,     component  : Maincomponent
+https://localhost:4200/Employee       -->  path : https://localhost:4200/employee , component : Employee comp
+https://localhost:4200/EmployeeDetails --> path : https://localhost:4200/employeedetails , component : empdetailsccomp
+
+  
+
+
+
+
+
+
+1. i need to prepare the outlet to capture the main component
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
