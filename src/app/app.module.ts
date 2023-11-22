@@ -9,6 +9,8 @@ import { EmployeeDetailsComponent } from './employee-details/employee-details.co
 import { Routes , RouterModule } from '@angular/router';
 import { EmployeeService } from './employee.service';
 import { FormsModule } from '@angular/forms';
+import { LoginComponent } from './login/login.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 
 
@@ -42,7 +44,13 @@ const routes : Routes = [
                            { path : "main" , component : MainComponent } , 
                            { path : "employee" , component : EmployeeComponent},
                            { path : "employeedetails" , component : EmployeeDetailsComponent},
-                           { path : "employeedetails/:ID" , component : EmployeeDetailsComponent}
+                           { path : "employeedetails/:ID" , component : EmployeeDetailsComponent},
+                           { path : "login" , component : LoginComponent } , 
+                           { path : "not-found" , component : NotFoundComponent},
+
+                           
+                           { path : "" ,  redirectTo:'login'  ,pathMatch:'full' } ,    //localhost:4200/login
+                           { path : "**" , redirectTo:'not-found' }
                         ];
 
 
@@ -52,7 +60,9 @@ const routes : Routes = [
     AppComponent,
     MainComponent,
     EmployeeComponent,
-    EmployeeDetailsComponent
+    EmployeeDetailsComponent,
+    LoginComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,

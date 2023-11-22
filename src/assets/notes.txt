@@ -145,6 +145,34 @@ https://localhost:4200/EmployeeDetails --> path : https://localhost:4200/employe
   http://localhost:4200/employeedetails?ID = 1         - querystring
   http://localhost:4200/employeedetails#1             - fragment
   
+
+
+
+
+  How you are going to provide the guards to the route?
+
+  whenever you are entering in anycompany the way how you are going to show your id then office guard will allow to you.
+
+
+  so whenever you are going to give the login crediantials and login ---> you are going to navigathe the next screen
+
+
+  login screen -- for gives your idenity
+
+
+  Task : Business
+   Hey!!! Madan 
+   We are now having the 3 paths --- > Main , employye and employeedetails 
+   so i want to access the these 3 paths who ever having the role = Admin
+
+  
+ Logicical thining
+  i have to active the path when employee having the admin role
+  i am going to decice canActivate or not to the user incase of admin activateroute otherwise not?
+
+code :
+
+start the code
   
   
   
