@@ -11,6 +11,7 @@ import { EmployeeService } from './employee.service';
 import { FormsModule } from '@angular/forms';
 import { LoginComponent } from './login/login.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { canActivateGuard } from './can-activate.guard';
 
 
 
@@ -41,7 +42,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
 */
 
 const routes : Routes = [ 
-                           { path : "main" , component : MainComponent } , 
+                           { path : "main" , component : MainComponent , canActivate : [ canActivateGuard ] } , 
                            { path : "employee" , component : EmployeeComponent},
                            { path : "employeedetails" , component : EmployeeDetailsComponent},
                            { path : "employeedetails/:ID" , component : EmployeeDetailsComponent},

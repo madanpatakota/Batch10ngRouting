@@ -160,6 +160,7 @@ https://localhost:4200/EmployeeDetails --> path : https://localhost:4200/employe
   login screen -- for gives your idenity
 
 
+
   Task : Business
    Hey!!! Madan 
    We are now having the 3 paths --- > Main , employye and employeedetails 
@@ -173,6 +174,11 @@ https://localhost:4200/EmployeeDetails --> path : https://localhost:4200/employe
 code :
 
 start the code
+
+
+  login screen -- you are going to take the identity from textboxes 
+
+  you have to give this idenity to the guards
   
   
   
