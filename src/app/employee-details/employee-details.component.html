@@ -18,7 +18,7 @@
       
     </div>
     <div class="col-6">
-      <input type="text" class="form-control" placeholder="Employee ID" />
+      <input name="empid" type="text" class="form-control" placeholder="Employee ID" [ngModel]="employeedetails.EmpID" />
     </div>
   </div>
   <div class="form-group row mt-2">
@@ -27,7 +27,7 @@
      
     </div>
     <div class="col-6">
-      <input type="text" class="form-control" placeholder="Location" />
+      <input name="location" type="text" class="form-control" placeholder="Location" [ngModel] = "employeedetails.Location" />
     </div>
   </div>
   <div class="form-group row mt-2">
@@ -36,7 +36,7 @@
      
     </div>
     <div class="col-6">
-      <input type="text" class="form-control" placeholder="Age" />
+      <input name="age" type="text" class="form-control" placeholder="Age" [ngModel]="employeedetails.Age" />
     </div>
   </div>
   <div class="form-group row mt-2">
@@ -45,7 +45,7 @@
       
     </div>
     <div class="col-6">
-      <input type="text" class="form-control" placeholder="Religion" />
+      <input name="religion" type="text" class="form-control" placeholder="Religion" [ngModel]="employeedetails.religion" />
     </div>
   </div>
 </form>

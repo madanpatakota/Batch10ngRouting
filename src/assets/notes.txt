@@ -106,7 +106,15 @@ https://localhost:4200/EmployeeDetails --> path : https://localhost:4200/employe
   
   
   
-  
+  1.   I AM SENDING THE PARAMeter from employee page to employeedetails
+
+
+  2. when you are landed into employeedetails
+       we have to take the value from the url
+
+
+  A :  you have to take the activate router and subscribe the  params of that activate route then you will receive the parametes from list
+      you will recevie the what are the parameters from the url
   
   
   

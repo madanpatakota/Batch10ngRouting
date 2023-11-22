@@ -19,10 +19,14 @@
           <td>{{item.Role}}</td>
           <td>{{item.Email}}</td>
 
-          <td><a style="cursor: pointer;" routerLink="/employeedetails" >...More</a></td>
+          <!-- <td><a style="cursor: pointer;" routerLink="/employeedetails" >...More</a></td> -->
+          <td><a style="cursor: pointer;" (click)="evtNavigationWithoutParam()" >...More</a></td>
+
 
            <!-- here you are tring to pass the itemid to the employeedetails path -->
-          <td><a style="cursor: pointer;" [routerLink] ="['/employeedetails',item.ID]" >...MoreWithParam</a></td>
+          <!--we are clicking the anchor link--> 
+          <!-- <td><a style="cursor: pointer;" [routerLink] ="['/employeedetails',item.ID]" >...MoreWithParam</a></td> -->
+          <td><a style="cursor: pointer;" (click)="evtNavigationWithParam(item.ID)" >...MoreWithParam</a></td>
 
 
 

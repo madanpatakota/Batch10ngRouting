@@ -1,5 +1,8 @@
+import { Injectable } from '@angular/core';
 import { Employee, EmployeeDetails } from './employee';
 
+
+// @Injectable({'providedIn':'root'})
 export class EmployeeService {
   employeesList: Employee[] = [
     {

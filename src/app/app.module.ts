@@ -8,6 +8,7 @@ import { EmployeeDetailsComponent } from './employee-details/employee-details.co
 
 import { Routes , RouterModule } from '@angular/router';
 import { EmployeeService } from './employee.service';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -55,7 +56,8 @@ const routes : Routes = [
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+    FormsModule
   ],
   providers: [ EmployeeService ],
   bootstrap: [AppComponent]
