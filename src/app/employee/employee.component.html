@@ -19,15 +19,35 @@
           <td>{{item.Role}}</td>
           <td>{{item.Email}}</td>
 
+          
+
           <!-- <td><a style="cursor: pointer;" routerLink="/employeedetails" >...More</a></td> -->
           <td><a style="cursor: pointer;" (click)="evtNavigationWithoutParam()" >...More</a></td>
 
 
            <!-- here you are tring to pass the itemid to the employeedetails path -->
           <!--we are clicking the anchor link--> 
-          <!-- <td><a style="cursor: pointer;" [routerLink] ="['/employeedetails',item.ID]" >...MoreWithParam</a></td> -->
-          <td><a style="cursor: pointer;" (click)="evtNavigationWithParam(item.ID)" >...MoreWithParam</a></td>
 
+          <!-- params -->
+          <!-- <td><a style="cursor: pointer;" [routerLink] ="['/employeedetails',item.ID]" >...MoreWithParam</a></td> -->
+          <!-- <td><a style="cursor: pointer;" (click)="evtNavigationWithParam(item.ID)" >...MoreWithParam</a></td> -->
+
+
+          <!-- querystring -->
+          <!-- http://localhost:4200/employeedetails?ID = 1         - querystring -->
+          <!-- <td><a style="cursor: pointer;"
+                 [routerLink] ="['/employeedetails']"
+                 [queryParams]="{'ID': item.ID}" >...MoreWithParam</a></td> -->
+          <!-- <td><a style="cursor: pointer;" (click)="evtNavigationWithParam(item.ID)" >...MoreWithParam</a></td> -->
+
+
+
+           <!-- fragment -->
+          <!-- http://localhost:4200/employeedetails#1         - fragment -->
+           <!-- <td><a style="cursor: pointer;"
+                 [routerLink] ="['/employeedetails']"
+                 fragment="{{item.ID}}" >...MoreWithParam</a></td> -->
+           <td><a style="cursor: pointer;" (click)="evtNavigationWithParam(item.ID)" >...MoreWithParam</a></td>
 
 
         </tr>

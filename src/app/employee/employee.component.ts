@@ -37,7 +37,9 @@ export class EmployeeComponent implements OnInit {
 
   evtNavigationWithParam(id:any){
        // i want to navigate the router......
-       this.router.navigate(['/employeedetails' , id]);
+       //this.router.navigate(['/employeedetails' , id]);      // param
+       //this.router.navigate(['/employeedetails'], { queryParams : { ID : id}}) // queyrstring 
+       this.router.navigate(['/employeedetails'],  { fragment : id} );  // fragment
   }
 
 

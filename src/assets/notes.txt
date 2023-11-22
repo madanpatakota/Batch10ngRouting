@@ -116,9 +116,34 @@ https://localhost:4200/EmployeeDetails --> path : https://localhost:4200/employe
   A :  you have to take the activate router and subscribe the  params of that activate route then you will receive the parametes from list
       you will recevie the what are the parameters from the url
   
+
+
+  // https://localhost:4200/EmployeeDetails --> path : https://localhost:4200/employeedetails , component : empdetailsccomp
   
-  
-  
+
+
+  https://github.com/madanpatakota?tab=repositories    - querystring
+  https://github.com/madanpatakota#repositories        - fragment
+
+
+  Ways of wringing the code 
+  1. Params           -- completed
+       .html
+       .ts
+
+  2. querystring      -- completed
+       .html          -- done
+       .ts            --
+
+  3. fragment         -- todo
+       .html
+       .ts
+
+
+
+  http://localhost:4200/employeedetails/1              - params
+  http://localhost:4200/employeedetails?ID = 1         - querystring
+  http://localhost:4200/employeedetails#1             - fragment
   
   
   

@@ -43,9 +43,31 @@ export class EmployeeDetailsComponent implements OnInit {
             console.log(this.employeedetails);
 
       })
-         
+
+
+      this.activateRoute.queryParams.subscribe((routequeryparams:any)=>{
+        console.log("Queryparams " , routequeryparams);   // { id : _______
+        
+        var filterEmployees : EmployeeDetails[] =   this.employeeSerivce.employeeDetails.filter((employee)=> { return employee.EmpID == +routequeryparams.ID});
+
+
+        this.employeedetails    =  filterEmployees[0];
+        })
+     
+
+     this.activateRoute.fragment.subscribe((fragmentValue:any)=>{
+         console.log("fragmentValue " , fragmentValue);   // 1
+
+         var filterEmployees : EmployeeDetails[] =   
+         this.employeeSerivce.employeeDetails.filter((employee)=> { return employee.EmpID == +fragmentValue});
+
+         this.employeedetails    =  filterEmployees[0];         
+      })
+
     }
 
+  }
 
 
-}
+
+
